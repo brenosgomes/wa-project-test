@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsBoolean, IsString } from 'class-validator';
+import { IsString } from 'class-validator';
 
 export class CreateLaboratoryDto {
   @ApiProperty()
@@ -9,8 +9,4 @@ export class CreateLaboratoryDto {
   @ApiProperty()
   @IsString()
   address: string;
-
-  // @ApiProperty()
-  // @IsBoolean()
-  // status: boolean;
 }
